@@ -67,7 +67,24 @@ int main()
 
     // Print members of myStructure
     cout << myStructure.myNum << "\n";
-    cout << myStructure.myString << "\n";
+    cout << myStructure.myString << "\n\n";
+
+    // Pointers and References
+    string food = "Pizza";
+    string* ptr = &food;
+    string& meal = food;
+
+    cout << "food = " << food << "\n"; // Outputs Pizza
+    cout << "ptr = " << ptr << "\n";
+    cout << "*ptr = " << *ptr << "\n";
+    cout << "&food = " << &food << "\n";
+    cout << "meal = " << meal << "\n\n";
+
+    *ptr = "Hamburger";
+    cout << "*ptr has been changed to " << "Hamburger" << "\n";
+    cout << "*ptr = " << *ptr << "\n";
+    cout << "food = " << food << "\n\n"; 
+
 
     cout << "\nEnd of program" << endl;
 
